@@ -85,7 +85,7 @@ p{
     flex-wrap: wrap;
 }
 .conteiner{
-
+    width: 100%;
     margin: 1em;
     border-radius: 1em;
     display: grid;
@@ -105,6 +105,7 @@ p{
 .conteiner img{
     width: 100%;
     border-radius: 1em;
+    margin: 1em;
 }
 
 
@@ -352,7 +353,7 @@ footer a{
 
     }
     .max{
-        max-width: 1700px;
+        max-width: 1350px;
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
