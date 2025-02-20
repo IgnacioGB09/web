@@ -1,0 +1,67 @@
+#animeName{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+#imgAnime{
+    border-radius: 10px;
+    width: 70%;
+    
+    
+}
+#nameAnime{
+    font-size: 2rem;
+}
+#information, #nameAnime {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#information{
+    font-size: 1.2rem;
+    line-height: 2em;
+}
+#gender{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.gnreName{
+    color: #22DEFA;
+    font-size: 16px;
+    list-style: none;
+    background: #0f0f3b;
+    padding: 1em;
+    border-radius: 1em;
+}
+@media(width >= 1200px){
+    #animeName{
+        margin: 10% auto auto auto;
+        max-width: 1450px;
+        grid-template-columns: 25% 75%;
+        padding: 1.4em;
+        align-items: center;
+        justify-items: start;
+    }
+    #gender{
+      grid-column: 1/2;
+      flex-wrap: nowrap;
+      padding: 7px;
+       
+    }
+    .gnreName{
+        font-size: 14px;
+    }
+    #imgAnime{
+        width: 87%;
+    }
+    #information, #nameAnime {
+        text-align: start;
+    }
+   
+}

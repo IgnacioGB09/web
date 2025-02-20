@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/same.css">
+    <link rel="stylesheet" href="../css/ingresa.css">
+    <script src="../js/ingresa.js" defer></script>
+    <script src="../js/same.js" defer></script>
+    
+    
+    <title>App anime</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <a href="../index.html"> <img id="logo" src="../img/logo.png" alt="logo"></a>
+             <input type="checkbox"  id="menu">
+            <label for="menu">                         
+                 <div id="iconBurger">
+                     <div class="top"></div>
+                     <div class="meat"></div>
+                     <div class="bottom"></div>
+                 </div>
+             </label> 
+             <nav id="burger">
+                 <ul id="link">
+                     <li><a href="../index.html" class="titulos">Inicio</a></li>
+                     <li><a href="../search/filter.html" class="titulos">Directorio Anime</a></li>
+                     <li><a href="#" class="titulos">Mi lista</a></li>
+                 </ul>
+                 <ul id="icon">
+                    <li><a href="../search/search.html"><img src="../img/search.png" alt="buscar icono"></a></li>
+                     <li id="user"><img  src="../img/user.png" alt="usuario icono"><p id="userName"></p></li>
+                 </ul>
+                  <ul id="menuInicio">
+                    <li ><p id="userName"></p></li>
+                     <li><a href="../account/logIn.html" class="titulos">Iniciar sesión</a></li>
+                     <li><a href="#" class="titulos"> Favoritos</a></li>
+                     <li><a href="#" class="titulos"> Ajustes</a></li>
+                     <li><a href="#" class="titulos" id="Cerrar"> Cerrar sesión</a></li>
+                 </ul> 
+             </nav>
+             
+         </nav>
+            
+        <section id="form">
+            <h1 id="hUno" class="titulos">Ingresar</h1>
+                <form id="form1" class="forms" action="" method="post">
+                    <label class="titulos" for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required>
+                    <label class="titulos" for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña">
+                    <a id="recuperar" class="titulos" href="#">Olvidaste la
+                        contraseña</a>
+                    <div class="bottom" >
+                        <button class="titulos boton1" id="ingresar">Ingresar</button>
+                    </div>
+                </form>
+                <p class="titulos">¿No tienes cuenta?<a href="registration.html">Registro</a></p>
+                <p class="titulos" id="warning" ></p>
+        </section>
+    </header>
+    <footer>
+        <p class="titulos"> <b> Anime Online</b> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+        <ul>
+            <li><a href="#" class="titulos">Descargar videos de Tiktok</a></li>
+            <li><a href="#" class="titulos">Términos y condiciones</a></li>
+            <li><a href="#" class="titulos">Política de privacidad</a></li>
+            <li><a href="#" class="titulos">Sobre nekonite</a></li>
+        </ul>
+        <img src="../img/logoBlack.png" alt="logo">
+        <ul id="iconos">
+            <li><a href="#"><img src="../img/facebook.png" alt="icono facebook"></a></li>
+            <li><a href="#"><img src="../img/youtube.png" alt="icono youtube"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

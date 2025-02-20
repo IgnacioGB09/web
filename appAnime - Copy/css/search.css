@@ -1,0 +1,105 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+header{
+    align-items: start;
+}
+label{
+    color: white;
+}
+
+section{
+    padding: 1em;
+    width: 100%;
+
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+label img{
+    width: 10%;
+}
+#searchL input{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 0 10px;
+    width: 100%;
+}
+#searchL input:focus{
+    outline: none;
+}
+
+select{
+    overflow: hidden;
+}
+select option{
+    background-color: #08081D;
+    width: 100%;
+}
+
+.cards{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#filtroCont{
+    width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+    
+}
+@media (width >= 1200px)  {
+    #search{ 
+        padding:  1em;
+        max-width: 1450px;
+        margin: 12% auto;
+        gap: 1em;
+    } 
+    #filto-btn{
+        flex-direction: column;
+        width: 35%;
+        position: sticky;
+        top: 0;
+    }
+    #conteiner{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+        gap: 2em;
+        width: 100%;
+    }
+    #filtroCont{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1em;
+        justify-self: end;
+        width: 100%; 
+        padding: 1em 0;
+    }
+    
+    .cards{
+        width: 100%;
+    }
+    .cards img{
+        height: 365px;
+    }
+    #searchL img{
+        width: 2.5em;
+    }
+    #searchL input{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+

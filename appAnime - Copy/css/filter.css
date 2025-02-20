@@ -1,0 +1,143 @@
+
+#filterM{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0 1em;
+    padding: 0 1em;
+}
+#filtroMenu{
+    display: none;
+}
+aside{
+    width: 100%;
+    padding: 1em;
+    /* position: absolute;
+    top: 0;
+    left:-100%;
+    margin: 0;
+    background-color: #1E1E40;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 1; */
+}
+h1{
+    font-size: 3em;
+    color: white;
+}
+#filterM img{
+    width: 9%;
+}
+select{
+    overflow: hidden;
+    margin: 1em 0;
+}
+select option{
+    background-color: #08081D;
+    width: 100%;
+}
+
+
+#botonFiltro{
+    font-size: 3rem;
+    background-color: #22DEFA;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 15px;
+}
+#botonMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+#number{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.botonn{
+    background-color: transparent;
+    border: none;
+}
+
+.botonn img{
+    width: 73%;
+}
+#filterImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0 1em;
+    flex-wrap: wrap;
+}
+.tarjetaDos{
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+#conFiltro{
+    position: absolute;
+    left:-100%;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    transition-duration: .25s;
+    z-index: 1;
+    background-color: #08081D;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+}
+
+
+
+#filtroMenu:checked ~ #conFiltro{
+    left: 0;
+}
+@media(width >= 1200px){
+    main{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: 12% auto;
+        max-width: 1450px;
+    }
+    #conFiltro{
+        position: static;
+        
+    }
+
+    #filterImg{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1em;
+        padding: 1.3em;
+        margin: 5% 0;
+    }
+    #botonMain{
+        justify-content: center;
+        grid-column: 1/3;
+    }
+    .tarjetaDos{
+        width: 95%;
+    }
+
+    .tarjetaDos img{
+        height: 59%;
+    }
+    #botonFiltro{
+        font-size: 1.3em;
+    }
+    #filter{
+        overflow: visible;
+    }
+    aside{
+        position: sticky;
+        padding: 1em;
+        top: 0;
+        margin: 0 0 5em 0;
+    }
+
+}
